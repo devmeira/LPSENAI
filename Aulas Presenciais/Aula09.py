@@ -33,25 +33,42 @@
 # Criar uma lista no estilo playlist com 10 músicas
 # Usar laços para exibir todas as músicas
 
-playlist = ["Musica01", "Musica02", "Musica03", "Musica04", "Musica05", "Musica06", "Musica07", "Musica08", "Musica09", "Musica10"]
+# playlist = ["Musica01", "Musica02", "Musica03", "Musica04", "Musica05", "Musica06", "Musica07", "Musica08", "Musica09", "Musica10"]
 
-print("Essas são suas Playlists 🎶")
+# print("Essas são suas Playlists 🎶")
 
-print("""
-      01. Anos 2000;
-      02. Melhores Animes;
-      03. Lofi Chill
-    """)
+# print("""
+#       01. Anos 2000;
+#       02. Melhores Animes;
+#       03. Lofi Chill
+#     """)
 
-# Obs.: Não importa qual ele escolher vai abrir a mesma Playlist!
+# # Obs.: Não importa qual ele escolher vai abrir a mesma Playlist!
 
-input("Digite qual playlist quer ouvir agora: ")
+# input("Digite qual playlist quer ouvir agora: ")
 
-print("Segue as músicas da sua playlist escolhida!\n")
+# print("Segue as músicas da sua playlist escolhida!\n")
 
-for _ in playlist:
-    print(_)
-
-
+# for _ in playlist:
+#     print(_)
 
 
+# Registro 
+
+usuarios = [
+    ["Alice", "alice@gmail.com", 30],
+    ["Bob", "bob@gmai.com", 24],
+    ["Carlos", "carlos@gmail.com", 35],
+    ["Diana", "diana@yahoo.com", 28]
+]
+
+print(usuarios)
+
+primeiro_usuario = usuarios[0]
+print(f"Primeiro usuário: {primeiro_usuario}")
+
+segundo_usuario = usuarios[1]
+print(f"Segundo usuário: {segundo_usuario}")
+
+ultimo_usuario = usuarios[3]
+print(f"Ultimo usuário: {ultimo_usuario}")
