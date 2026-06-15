@@ -1,0 +1,47 @@
+# Fazer mais dois exercícios para postar dentro do modulo do presencial
+# Calculo de Salario Liquido - Avaliacao 06
+
+# def calcular_salario_liquido(salario_bruto):
+#     '''Calcula salário líquido com descontos INSS e IR simplificados'''
+#     if salario_bruto <= 1412:
+#         inss = salario_bruto * 0.075
+#     elif salario_bruto <= 2666.68:
+#         inss = salario_bruto * 0.99
+#     else:
+#         inss = salario_bruto * 0.12
+
+#     base_ir = salario_bruto - inss
+#     if base_ir <= 2112:
+#         ir = 0
+#     elif base_ir <= 2826.65:
+#         ir = base_ir * 0.075 - 158.40
+#     else:
+#         ir = base_ir * 0.15 - 370.40
+
+#     liquido = salario_bruto - inss - ir
+#     return liquido, inss, ir
+
+# nome = input("Nome do funcionário: ")
+# bruto = float(input("Salário bruto (R$): "))
+
+# liquido, inss, ir = calcular_salario_liquido(bruto)
+# print(f"\nHolerite de {nome}:")
+# print(f"    Salário bruto:      R$ {bruto:>8.2f}")
+# print(f"    INSS:              -R$ {inss:>8.2f}")
+# print(f"    IR                 -R$ {ir:>8.2f}")
+# print(f"    Salário líquido:    R$ {liquido:>8.2f}")
+
+### Estatisticas - Avaliacao 07 ### 
+
+def estatisticas(*numeros):
+    total = sum(numeros)
+    media = total / len(numeros)
+    maximo = max(numeros)
+    minimo = min(numeros)
+    print(f"Total: {total} | Média: {media:.2f} | Máx: {maximo:.2f} | Mín: {minimo}")
+
+estatisticas(59, 60, 80, 90, 46)
+estatisticas(70, 89, 49)
+#listas
+lista = [80, 90, 95]
+estatisticas(*lista)
