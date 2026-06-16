@@ -33,15 +33,25 @@
 
 ### Estatisticas - Avaliacao 07 ### 
 
-def estatisticas(*numeros):
-    total = sum(numeros)
-    media = total / len(numeros)
-    maximo = max(numeros)
-    minimo = min(numeros)
-    print(f"Total: {total} | Média: {media:.2f} | Máx: {maximo:.2f} | Mín: {minimo}")
+# def estatisticas(*numeros):
+#     total = sum(numeros)
+#     media = total / len(numeros)
+#     maximo = max(numeros)
+#     minimo = min(numeros)
+#     print(f"Total: {total} | Média: {media:.2f} | Máx: {maximo:.2f} | Mín: {minimo}")
 
-estatisticas(59, 60, 80, 90, 46)
-estatisticas(70, 89, 49)
-#listas
-lista = [80, 90, 95]
-estatisticas(*lista)
+# estatisticas(59, 60, 80, 90, 46)
+# estatisticas(70, 89, 49)
+# #listas
+# lista = [80, 90, 95]
+# estatisticas(*lista)
+
+### Kwargs - argumentos nomeados variaveis - Exercício Extra 08
+
+# Captura qualquer quantidade de argumentos como um dicionário
+
+def exibir_info(**dados): # **Kwargss vira dicionário
+    for chave, valor in dados.items():
+        print(f"{chave}: {valor}")
+
+exibir_info(nome="Carlos", idade=30, cidade="PR", partido="PRONA")
